@@ -200,6 +200,13 @@ const HaifaLogo = styled.img`
         margin-right:0.6em;
         margin-left:1em;
 }
+@media (min-width: 1920px) {
+        height:30em;
+        width:28em;
+        margin-top:1em;
+        margin-right:5em;
+        margin-left:0em;
+}
         @media (min-width: 2560px) {
         height:40em;
         width:36em;
@@ -219,6 +226,9 @@ const TextDiv = styled.div`
         margin-top:-3.1em;
         margin-right:1em;
     }
+    @media (min-width: 1920px) {
+        margin-top:-6.2em;             
+}
         @media (min-width: 2560px) {
         margin-top:-5em;
     }
@@ -243,6 +253,10 @@ const H1= styled.p`
     @media (min-width: 1440px) {
         font-size:6.4em;
 }
+@media (min-width: 1920px) {
+        font-size:8.2em;      
+        letter-spacing:.07em;       
+}
     @media (min-width: 2560px) {
         font-size:11em;
         }
@@ -266,6 +280,10 @@ const P = styled.p`
     @media (min-width: 1440px) {
         font-size:5.6em;
 }
+@media (min-width: 1920px) {
+        font-size:6.9em;
+        letter-spacing:.05em;       
+}
     @media (min-width: 2560px) {
         font-size:9em;
 }
@@ -283,6 +301,9 @@ const Buttons= styled.div`
     }
     @media (min-width: 1440px) {
         margin-top:-4.2em;
+        }
+    @media (min-width: 1920px) {
+        margin-top:-5.8em;
         }
     @media (min-width: 2560px) {
         margin-top:-7em;
@@ -312,6 +333,11 @@ const Button = styled.button`
         font-size:1.5em;
         width:8em;
 }
+@media (min-width: 1920px) {
+        font-size:1.7em;
+        width:8.5em;
+}
+
     @media (min-width: 2560px) {
         font-size:2.3em;
 }

@@ -52,6 +52,9 @@ const Div = styled.div`
     @media (min-width: 1440px) {
         height:35em;
         }
+    @media (min-width: 1920px) {
+       height:55em;
+        }
     @media (min-width: 2560px) {
         height:60em;
         }
@@ -77,6 +80,10 @@ const Stad = styled.img`
     @media (min-width: 1440px) {
         height:35em;
         width:52em;
+        }
+    @media (min-width: 1920px) {
+       height:55em;
+       width:65em;
         }
     @media (min-width: 2560px) {
         height:60em;
@@ -130,6 +137,9 @@ const P = styled.p`
         }
     @media (min-width: 1440px) {
         font-size:1.15em;
+        }
+    @media (min-width: 1920px) {
+       font-size:1.8em;
         }
     @media (min-width: 2560px) {
         font-size:2em;

@@ -16,8 +16,8 @@ class Tickets extends Component {
         <Img src={tri}></Img>
       </Bline>
       <Header>
-        <P>יום שני 06/03/2017 ,21:00</P>
-        <P>ליגת העל,איצטדיון סמי עופר</P>
+        <PP>יום שני 06/03/2017 ,21:00</PP>
+        <PP>ליגת העל,איצטדיון סמי עופר</PP>
         <Arrows>
             <Left src={left}></Left>
             <HaLogo src={Hapoel}></HaLogo>
@@ -34,7 +34,7 @@ class Tickets extends Component {
       <Content>
           <Players src={haifaPlayers}></Players>
           <Text>
-          <H1>מכירת מנויים וכרטיסים - עונת 2016/2017</H1>
+          <H11>מכירת מנויים וכרטיסים - עונת 2016/2017</H11>
             <H5>רכישת מנויים:</H5>
             <P>רכישת מנויים נמשכת!</P>
             <P>מנוי ליציע הכסף,גוש 301 ב-700 ש"ח בלבד</P>
@@ -70,12 +70,44 @@ const Div = styled.div`
     @media (min-width: 1440px) {
         height:35em;
         }
+    @media (min-width: 1920px) {
+       height:55em;
+        }
     @media (min-width: 2560px) {
         height:60em;
         }
 `
 const BDiv = styled.div`
    
+`
+const H11=styled.p`
+      font-size:.4em;
+    font-weight:500;
+    @media (min-width: 320px) {
+        /* margin-bottom:1.5em; */
+        }
+    @media (min-width: 425px) {
+        font-size:.4em;
+}
+    @media (min-width: 768px) {
+        /* margin-bottom:-3em; */
+        font-size:1em;
+}
+    @media (min-width: 1024px) {
+        font-size:1.1em;
+        margin-bottom:0.8em;
+}
+    @media (min-width: 1440px) {
+        font-size:1.4em;
+        }
+    @media (min-width: 1920px) {
+        font-size:2em;
+        margin-bottom:1.5em;
+        font-weight:600;
+        }
+    @media (min-width: 2560px) {
+        font-size:2.5em;
+        }
 `
 const Bline = styled.div`
     height:.2em;
@@ -114,6 +146,28 @@ const Img = styled.img`
         margin-left:10em;
         }
 `
+const PP = styled.p`
+    margin-top:-1em;
+    color:#231f20;
+    direction:rtl;
+    font-size:.35em;
+    @media (min-width: 768px) {
+        font-size:.8em;
+        }
+    @media (min-width: 1024px) {
+        font-size:1em;
+        margin-top:-1em;
+        }
+    @media (min-width: 1440px) {
+        font-size:1.1em;
+        }
+    @media (min-width: 1920px) {
+        font-size:1.25em;
+        }
+    @media (min-width: 2560px) {
+        font-size:2em;
+        }
+ `       
 const Header = styled.div`
     background:#f4f5fa;
     padding-top:.8em;
@@ -130,6 +184,9 @@ const Header = styled.div`
         }
     @media (min-width: 1440px) {
         height:3.5em;
+        }
+    @media (min-width: 1920px) {
+        height:6em;
         }
     @media (min-width: 2560px) {
         height:8em;
@@ -164,6 +221,11 @@ const Buy = styled.button`
       margin-left:3.5em;
       font-size:.8em;
         }
+    @media (min-width: 1920px) {
+        font-size:1.2em;
+        margin-left:2.5em;
+        margin-top:1.8em;
+        }
     @media (min-width: 2560px) {
        font-size:1.5em;
        margin-left:6em;
@@ -183,6 +245,10 @@ const P = styled.p`
         }
     @media (min-width: 1440px) {
         font-size:1.1em;
+        }
+    @media (min-width: 1920px) {
+        font-size:1.65em;
+    
         }
     @media (min-width: 2560px) {
         font-size:2em;
@@ -215,6 +281,10 @@ const Left = styled.img`
         height:2.5em;
         width:2.5em;
         }
+    @media (min-width: 1920px) {
+        height:3em;
+        width:3em;
+        }
     @media (min-width: 2560px) {
         height:4em;
         width:4em;
@@ -241,6 +311,11 @@ const HaLogo = styled.img`
         width:4.2em;
         margin: 0 2.8em;
         }
+    @media (min-width: 1920px) {
+        margin: 0 6em;
+        height:6em;
+        width:5.4em;
+        }
     @media (min-width: 2560px) {
         height:8em;
         width:7.5em;
@@ -252,6 +327,10 @@ const HaiLogo = styled(HaLogo)`
     height:5em;
     width:4.5em;
 }
+@media (min-width: 1440px) {
+        height:6.5em;
+        width:5.8em;
+        }
 @media (min-width: 2560px) {
         height:9em;
         width:8em;
@@ -276,6 +355,10 @@ const H1 = styled.p`
 }
     @media (min-width: 1440px) {
         font-size:1.4em;
+        }
+    @media (min-width: 1920px) {
+        font-size:2em;
+        font-weight:500;
         }
     @media (min-width: 2560px) {
         font-size:2.5em;
@@ -302,6 +385,9 @@ const Vs = styled.p`
         }
     @media (min-width: 1440px) {
         margin: 0 5em;
+        }
+    @media (min-width: 1920px) {
+        font-size:1.8em;
         }
     @media (min-width: 2560px) {
         margin: 0 8em;
@@ -351,6 +437,11 @@ const Players = styled.img`
         margin-left:6em;
         margin-top:1em;
 }
+    @media (min-width: 1920px) {
+        height:43.5em;
+        width:58em;
+        margin-right:0em;
+}
     @media (min-width: 2560px) {
        height:42em;
        width:64em;
@@ -367,6 +458,9 @@ const Text = styled.div`
     @media (min-width: 1024px) {
         letter-spacing:.05em;
         align-self:center;
+        }
+    @media (min-width: 1920px) {
+        margin-top:-2em;
         }
 `
 const H5 = styled.h5`
@@ -388,10 +482,13 @@ const H5 = styled.h5`
     @media (min-width: 1440px) {
         font-size:1.1em;
         }
+    @media (min-width: 1920px) {
+        font-size:1.8em;
+        margin-bottom:1.1em;
+        }
     @media (min-width: 2560px) {
         font-size:1.7em;
         }
-
 `
 const Span= styled.span`
     font-weight:600;
@@ -401,6 +498,10 @@ const Span= styled.span`
     @media (min-width: 768px) {
         font-size:.8em;
         }
+    @media (min-width: 1920px) {
+        font-size:1em;
+        }
+        
 `
 const P1 =styled(P)`
     margin-top:.2em;
@@ -415,6 +516,9 @@ const P1 =styled(P)`
         }
     @media (min-width: 1440px) {
         font-size:1em;
+        }
+    @media (min-width: 1920px) {
+        font-size:1.7em;
         }
     @media (min-width: 2560px) {
        font-size:1.8em;
@@ -434,6 +538,9 @@ const H55= styled(H5)`
     @media (min-width: 1440px) {
         font-size:.85em;
         }
+    @media (min-width: 1920px) {
+        font-size:1.45em;
+        }
     @media (min-width: 2560px) {
        font-size:1.5em;
         }
@@ -448,6 +555,9 @@ const H54= styled(H55)`
         }
     @media (min-width: 1440px) {
         font-size:.85em;
+        }
+    @media (min-width: 1920px) {
+        font-size:1.45em;
         }
     @media (min-width: 2560px) {
        font-size:1.5em;

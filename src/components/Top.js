@@ -72,6 +72,9 @@ const Div = styled.div`
     @media (min-width: 1440px) {
         height:35em;
         }
+    @media (min-width: 1920px) {
+       height:55em;
+        }
     @media (min-width: 2560px) {
         height:60em;
         }
@@ -95,6 +98,9 @@ const Topbar = styled.div`
 }
     @media (min-width: 1440px) {
         height:4.3em;
+}
+    @media (min-width: 1920px) {
+       height:5.5em;
 }
     @media (min-width: 2560px) {
         height:8em;
@@ -122,6 +128,9 @@ const Li = styled.li`
     @media (min-width: 1440px) {
         font-size:1em;
         }
+    @media (min-width: 1920px) {
+       font-size:1.3em;
+        }
     @media (min-width: 2560px) {
         font-size:2.1em;
         }
@@ -147,6 +156,10 @@ const Img = styled.img`
     @media (min-width: 1440px) {
         height:1.5em;
         width:1.5em;
+        }
+    @media (min-width: 1920px) {
+       height:2em;
+       width:2em;
         }
     @media (min-width: 2560px) {
         height:3em;
@@ -201,11 +214,10 @@ const HaifaLogo = styled.img`
         margin-left:1em;
 }
 @media (min-width: 1920px) {
-        height:30em;
-        width:28em;
-        margin-top:1em;
-        margin-right:5em;
-        margin-left:0em;
+        height:39em;
+        width:35em;
+        margin-top:5em;
+        margin-right:2em;
 }
         @media (min-width: 2560px) {
         height:40em;
@@ -227,7 +239,7 @@ const TextDiv = styled.div`
         margin-right:1em;
     }
     @media (min-width: 1920px) {
-        margin-top:-6.2em;             
+        margin-top:-3em;             
 }
         @media (min-width: 2560px) {
         margin-top:-5em;
@@ -254,8 +266,8 @@ const H1= styled.p`
         font-size:6.4em;
 }
 @media (min-width: 1920px) {
-        font-size:8.2em;      
-        letter-spacing:.07em;       
+        font-size:10.5em;      
+        letter-spacing:.03em;       
 }
     @media (min-width: 2560px) {
         font-size:11em;
@@ -281,8 +293,8 @@ const P = styled.p`
         font-size:5.6em;
 }
 @media (min-width: 1920px) {
-        font-size:6.9em;
-        letter-spacing:.05em;       
+        font-size:8.5em;
+        letter-spacing:.01em;       
 }
     @media (min-width: 2560px) {
         font-size:9em;
@@ -303,7 +315,7 @@ const Buttons= styled.div`
         margin-top:-4.2em;
         }
     @media (min-width: 1920px) {
-        margin-top:-5.8em;
+        margin-top:-7.2em;
         }
     @media (min-width: 2560px) {
         margin-top:-7em;
@@ -334,7 +346,7 @@ const Button = styled.button`
         width:8em;
 }
 @media (min-width: 1920px) {
-        font-size:1.7em;
+        font-size:2em;
         width:8.5em;
 }
 

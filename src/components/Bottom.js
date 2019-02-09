@@ -40,6 +40,9 @@ const Div = styled.div`
     @media (min-width: 1440px) {
         height:6em;
         }
+    @media (min-width: 1920px) {
+       height:7em;
+        }
     @media (min-width: 2560px) {
         height:8em;
         }
@@ -58,6 +61,9 @@ const H1 = styled.h1`
         }
     @media (min-width: 1024px) {
         font-size:1em;
+        }
+    @media (min-width: 1920px) {
+       font-size:1.5em;
         }
     @media (min-width: 2560px) {
         font-size:1.6em;
@@ -79,6 +85,9 @@ const H5 = styled.h5`
         }
     @media (min-width: 1440px) {
         font-size:1.1em;
+        }
+    @media (min-width: 1920px) {
+       font-size:1.5em;
         }
     @media (min-width: 2560px) {
         font-size:1.5em;
@@ -134,6 +143,10 @@ const Search = styled.input`
         font-size:1em;
         margin-right:6em;
         }
+    @media (min-width: 1920px) {
+       font-size:1.5em;
+       margin-right:3em;
+        }
     @media (min-width: 2560px) {
         font-size:1.6em;
         width:30em;
@@ -165,6 +178,10 @@ const Button = styled.button`
     @media (min-width: 1440px) {
         font-size:1em;       
         width:6em;
+        }
+    @media (min-width: 1920px) {
+       font-size:1.4em;
+       width:5em;
         }
     @media (min-width: 2560px) {
         font-size:1.6em;

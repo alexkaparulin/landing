@@ -55,6 +55,9 @@ const Div = styled.div`
     @media (min-width: 1440px) {
         height:35em;
         }
+    @media (min-width: 1920px) {
+       height:55em;
+        }
     @media (min-width: 2560px) {
         height:60em;
         }
@@ -81,6 +84,9 @@ const Text = styled.div`
         font-size:1.6em;
         /* margin-left:6em; */
         }
+    @media (min-width: 1920px) {
+       font-size:2.2em;
+        }
     @media (min-width: 2560px) {
         font-size:2.5em;
         /* margin-left:10em; */
@@ -93,6 +99,9 @@ const H1 = styled.h1`
     @media (min-width: 768px) {
         font-size:1.2em;
         }
+    @media (min-width: 1920px) {
+       font-size:1.3em;
+        }
     @media (min-width: 2560px) {
        font-size:1.4em;
         }
@@ -102,6 +111,9 @@ const P = styled.p`
     margin-top:-.4em;
     @media (min-width: 768px) {
         font-size:.75em;
+        }
+    @media (min-width: 1920px) {
+       font-size:.8em;
         }
 `
 const Button = styled.button`
@@ -162,6 +174,11 @@ const Img = styled.img`
         height:30.8em;
         width:37em;
         }
+    @media (min-width: 1920px) {
+       height:44.7em;
+       width:50em;
+       margin-top:8.4em;
+        }
     @media (min-width: 2560px) {
         height:50em;
         width:65em;
@@ -190,6 +207,10 @@ const Dots = styled.div`
     @media (min-width: 1440px) {
         left:15.5em;
         }
+    @media (min-width: 1920px) {
+       left:21.5em;
+       top:7em;
+        }
     @media (min-width: 2560px) {
         left:28em;
         top:4.5em;
@@ -211,6 +232,10 @@ const Dot = styled.img`
         height:1.3em;
         width:1.3em;
         }
+    @media (min-width: 1920px) {
+       height:1.6em;
+       width:1.6em;
+        }
     @media (min-width: 2560px) {
         height:2em;
         width:2em;
@@ -231,6 +256,10 @@ const GDot = styled.img`
     @media (min-width: 1440px) {
         height:1.3em;
         width:1.3em;
+        }
+    @media (min-width: 1920px) {
+        height:1.6em;
+        width:1.6em;
         }
     @media (min-width: 2560px) {
         height:2em;

@@ -51,6 +51,9 @@ const Div = styled.div`
     @media (min-width: 1440px) {
         height:35em;
         }
+    @media (min-width: 1920px) {
+       height:55em;
+        }
     @media (min-width: 2560px) {
         height:60em;
         }
@@ -78,6 +81,11 @@ const Player = styled.img`
         height:38em;
         width:26em;
         }
+    @media (min-width: 1920px) {
+       height:60em;
+       width:42em;
+       top:-5em;
+        }
     @media (min-width: 2560px) {
         height:65em;
         width:43em;
@@ -99,6 +107,9 @@ const Content = styled.div`
         /* margin-right:4em; */
         font-size:1.4em;
 }
+    @media (min-width: 1920px) {
+       font-size:2.2em;
+        }
     @media (min-width: 2560px) {
         font-size:2.2em;
         }

@@ -171,7 +171,7 @@ const Img = styled.img`
         margin-top:2.65em;
         }
     @media (min-width: 1440px) {
-        height:30.8em;
+        height:31em;
         width:37em;
         }
     @media (min-width: 1920px) {

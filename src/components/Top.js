@@ -214,9 +214,9 @@ const HaifaLogo = styled.img`
         margin-left:1em;
 }
 @media (min-width: 1920px) {
-        height:30em;
-        width:26em;
-        margin-top:10em;
+        height:26em;
+        width:25em;
+        margin-top:12em;
         margin-right:2em;
 }
         @media (min-width: 2560px) {

@@ -158,7 +158,7 @@ const H3 = styled.h3`
     padding-right:.7em;
     align-self:center;
     justify-self:center;
-    height:1.2em;
+    height:1.5em;
     width:5em;
     color:#007738;
     border:none;

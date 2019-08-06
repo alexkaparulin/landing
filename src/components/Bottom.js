@@ -47,26 +47,51 @@ const Div = styled.div`
         height:8em;
         }
 `
+const Text = styled.div`
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:space-around;
+    /* align-items:center; */
+    /* margin-left:1.3em; */
+    @media (min-width: 375px) {
+        /* margin-left:1.75em;    */
+}
+    @media (min-width: 425px) {
+        /* margin-left:2em; */
+}
+    @media (min-width: 1024px) {
+        /* margin-left:2.5em; */
+        /* border:1px solid black; */
+}
+    @media(min-width:1440px){
+        /* margin-left:0em; */
+    }
+    @media (min-width: 2560px) {
+        /* margin:0 10em; */
+}
+`
 const H1 = styled.h1`
     font-size:0.32em;
     font-weight:700;
     color:#f4f5fa;
-    margin-bottom:-1.2em;
+    /* margin-bottom:-1.2em; */
     direction:rtl;
     @media (min-width: 425px) {
-        font-size:0.4em;
+        /* font-size:0.4em; */
         }
     @media (min-width: 768px) {
-        font-size:.9em;
+        /* font-size:.9em; */
         }
     @media (min-width: 1024px) {
         font-size:1em;
+        /* margin-bottom:-1em; */
         }
     @media (min-width: 1920px) {
-       font-size:1.5em;
+       /* font-size:1.5em; */
         }
     @media (min-width: 2560px) {
-        font-size:1.6em;
+        /* font-size:1.6em; */
         }
 `
 const H5 = styled.h5`
@@ -74,44 +99,25 @@ const H5 = styled.h5`
     color:#f4f5fa;
     direction:rtl;
     @media (min-width: 425px) {
-        font-size:0.35em;
+        /* font-size:0.35em; */
         }
     @media (min-width: 768px) {
-        font-size:.82em;
-        margin-top:1.25em;
+        /* font-size:.82em; */
+        /* margin-top:1.25em; */
         }
     @media (min-width: 1024px) {
-        font-size:.9em;
+        font-size:1em;
+        margin-top:-.5em;
         }
     @media (min-width: 1440px) {
-        font-size:1.1em;
+        /* font-size:1.1em; */
         }
     @media (min-width: 1920px) {
-       font-size:1.5em;
+       /* font-size:1.5em; */
         }
     @media (min-width: 2560px) {
-        font-size:1.5em;
+        /* font-size:1.5em; */
         }
-`
-const Text = styled.div`
-    display:flex;
-    flex-direction:column;
-    margin-left:1.3em;
-    @media (min-width: 375px) {
-        margin-left:1.75em;   
-}
-    @media (min-width: 425px) {
-        margin-left:2em;
-}
-    @media (min-width: 1024px) {
-        margin-left:2.5em;
-}
-    @media(min-width:1440px){
-        margin-left:0em;
-    }
-    @media (min-width: 2560px) {
-        margin:0 10em;
-}
 `
 const Search = styled.input`
     border:.1em solid rgb(4, 27, 4);

@@ -6,118 +6,99 @@ import background from '../images/background.jpg'
 class Bottom extends Component {
   render() {
     return (
-    <Div>
+    <WrapContainer>
         <Text>
             <H1>מכבי חיפה איתכם גם באימייל</H1>
-            <H5>הצטרפו אלינו ותוכלו לקבל עדכונים שוטפים ישירות מהמועדון!</H5>
+            <H1Sub>הצטרפו אלינו ותוכלו לקבל עדכונים שוטפים ישירות מהמועדון!</H1Sub>
         </Text>
-        <Search placeholder="כתובת אימייל:"></Search>
-        <Button>שלח</Button>
-    </Div>
+        <SearchContainer>
+            <Search placeholder="כתובת אימייל:"></Search>
+            <Button>שלח</Button>
+        </SearchContainer>
+    </WrapContainer>
     );
   }
 }
 
 export default Bottom;
 
-const Div = styled.div`
+const WrapContainer = styled.div`
     height:3em;
     background:url(${background});
     display:flex;
     align-items:center;
-    padding-right:1em;
-    flex-direction:row;
     direction:rtl;
     @media (min-width: 768px) {
         height:4em;
-        }
+    }
     @media (min-width: 768px) {
         height:4em;
-        }
+    }
     @media (min-width: 1024px) {
         height:4em;
-        }
+    }
     @media (min-width: 1440px) {
         height:6em;
-        }
+    }
     @media (min-width: 1920px) {
        height:7em;
-        }
+    }
     @media (min-width: 2560px) {
         height:8em;
-        }
+    }
 `
 const Text = styled.div`
+    width:60%;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:space-around;
-    /* align-items:center; */
-    /* margin-left:1.3em; */
-    @media (min-width: 375px) {
-        /* margin-left:1.75em;    */
-}
-    @media (min-width: 425px) {
-        /* margin-left:2em; */
-}
-    @media (min-width: 1024px) {
-        /* margin-left:2.5em; */
-        /* border:1px solid black; */
-}
-    @media(min-width:1440px){
-        /* margin-left:0em; */
+    @media (min-width: 768px) {
+        width:45%;
     }
-    @media (min-width: 2560px) {
-        /* margin:0 10em; */
-}
+    @media (min-width: 1024px) {
+        width:35%;
+        padding:0 2em 0 0;
+    }
 `
 const H1 = styled.h1`
-    font-size:0.32em;
+    font-size:0.2em;
     font-weight:700;
     color:#f4f5fa;
-    /* margin-bottom:-1.2em; */
+    margin-bottom:-1.2em;
     direction:rtl;
-    @media (min-width: 425px) {
-        /* font-size:0.4em; */
-        }
     @media (min-width: 768px) {
-        /* font-size:.9em; */
-        }
+        font-size:.6em;
+    }
     @media (min-width: 1024px) {
         font-size:1em;
-        /* margin-bottom:-1em; */
-        }
-    @media (min-width: 1920px) {
-       /* font-size:1.5em; */
-        }
-    @media (min-width: 2560px) {
-        /* font-size:1.6em; */
-        }
+        margin-bottom:.5em;
+    }
 `
-const H5 = styled.h5`
-    font-size:0.32em;
+const H1Sub = styled.h1`
+    font-size:0.1em;
     color:#f4f5fa;
     direction:rtl;
-    @media (min-width: 425px) {
-        /* font-size:0.35em; */
-        }
+    @media (min-width: 320px) {
+        margin-top:2em;
+    }
     @media (min-width: 768px) {
-        /* font-size:.82em; */
-        /* margin-top:1.25em; */
-        }
+        font-size:.6em;
+    }
     @media (min-width: 1024px) {
         font-size:1em;
-        margin-top:-.5em;
-        }
-    @media (min-width: 1440px) {
-        /* font-size:1.1em; */
-        }
-    @media (min-width: 1920px) {
-       /* font-size:1.5em; */
-        }
-    @media (min-width: 2560px) {
-        /* font-size:1.5em; */
-        }
+        margin-top:-.3em;
+    }
+`
+const SearchContainer = styled.div`
+    display:flex;
+    width:40%;
+    @media (min-width: 768px) {
+        width:55%;
+    }
+    @media (min-width: 1024px) {
+        width:65%;
+        justify-content:flex-start;
+    }
 `
 const Search = styled.input`
     border:.1em solid rgb(4, 27, 4);
@@ -133,30 +114,27 @@ const Search = styled.input`
     @media (min-width: 425px) {
         width:32em;
         height:2em;
-        }
+    }
     @media (min-width: 768px) {
        width:20em;
-       /* height:4em; */
        font-size:.7em;
-        }
+    }
     @media (min-width: 1024px) {
         width:26em;
         font-size:.8em;
-        margin-right:5em;
-        }
+    }
     @media (min-width: 1440px) {
         width:28em;
         font-size:1em;
-        margin-right:6em;
-        }
+    }
     @media (min-width: 1920px) {
        font-size:1.5em;
        margin-right:3em;
-        }
+    }
     @media (min-width: 2560px) {
         font-size:1.6em;
         width:30em;
-        }
+    }
 `
 const Button = styled.button`
     border-radius:.8em;
@@ -168,28 +146,16 @@ const Button = styled.button`
     outline:none;
     @media (min-width: 425px) {
         height:2em;
-        }
+    }
     @media (min-width: 768px) {
         margin-top:.2em;
         font-size:.7em;       
         width:4em;
-        }
+    }
     @media (min-width: 1024px) {
         width:5em;
         height:2.4em;
-        margin-top:-.2em;
         margin-right:.5em;
         font-size:.8em;
-        }
-    @media (min-width: 1440px) {
-        font-size:1em;       
-        width:6em;
-        }
-    @media (min-width: 1920px) {
-       font-size:1.4em;
-       width:5em;
-        }
-    @media (min-width: 2560px) {
-        font-size:1.6em;
-        }
+    }
 `

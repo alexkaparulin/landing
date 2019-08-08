@@ -10,74 +10,74 @@ import haifalogo from '../images/haifalogo.png'
 class Top extends Component{
     render(){
         return(
-            <Div>
+            <WrapContainer>
                 <Topbar>
-                    <Ul>
+                    <NavbarList>
                         <Li>רכישת מנוי</Li>
                         <Li>כרטיסים</Li>
                         <Li>חנות המוצרים</Li>
                         <Li> המועדון</Li>
                         <Li>הסטוריה</Li>
                         <Li>אצטדיון סמי עופר</Li>
-                    </Ul>
-                    <UlIcons>
+                    </NavbarList>
+                    <NavbarIcons>
                         <Img src={facebook}></Img>
                         <Img src={instagram}></Img>
                         <Img src={twitter}></Img>
-                    </UlIcons>
+                    </NavbarIcons>
                 </Topbar>
                 <TopbarContent>
                     <HaifaLogo src={haifalogo}></HaifaLogo>
-                    <TextDiv>
+                    <TextContainer>
                         <H1>מכבי חיפה</H1>
                         <P>עונת 2016-2017</P>
                         <Buttons>
                             <Button>רכישת מנוי</Button>
                             <Button>רכישת כרטיס</Button>
                         </Buttons>
-                    </TextDiv>
+                    </TextContainer>
                 </TopbarContent>
-            </Div>
+            </WrapContainer>
         )
     }
 }
 export default Top
 
 const zoom = keyframes`
-  0%{background-position:38% 0%;
+  0%{
+    background-position:38% 0%;
     background-size:100%}
-  50%{background-position:63% 100%;
+  50%{
+    background-position:63% 100%;
     background-size:110%}
-  100%{background-position:38% 0%;
+  100%{
+    background-position:38% 0%;
     background-size:100%} 
 `;
-const Div = styled.div`
+const WrapContainer = styled.div`
     background:url(${background});
     background-size:cover;
     background-repeat:no-repeat;
     animation: ${zoom} 14s linear infinite;
     height:12em;
-    @media (min-width: 320px) {
-        
-        }
     @media (min-width: 768px) {
-         height:26em;
-        }
+        height:26em;
+    }
     @media (max-width: 768px) {
-         animation:none;
-        }
+        animation:none;
+    }
     @media (min-width: 1024px) {
         height:30em;
-        }
+    }
     @media (min-width: 1440px) {
         height:35em;
-        }
+    }
     @media (min-width: 1920px) {
        height:55em;
-        }
+    }
     @media (min-width: 2560px) {
         height:60em;
-        }
+    }
 `
 const Topbar = styled.div`
     display:flex;
@@ -89,24 +89,24 @@ const Topbar = styled.div`
     opacity:0.6;
     @media (min-width: 375px) {
         margin-bottom:-1.5em;
-}
+    }
     @media (min-width: 768px) {
-        height:3em;
-}
+        height:3em; 
+    }
     @media (min-width: 1024px) {
         height:3.9em;
-}
+    }
     @media (min-width: 1440px) {
         height:4.3em;
-}
+    }
     @media (min-width: 1920px) {
        height:5.5em;
-}
+    }
     @media (min-width: 2560px) {
         height:8em;
-}
+    }
 `
-const Ul = styled.ul`
+const NavbarList = styled.ul`
     display:flex;
     justify-content:flex-start;
     list-style-type:none;
@@ -121,19 +121,19 @@ const Li = styled.li`
     }
     @media (min-width: 768px) {
         font-size:.85em;
-        }
+    }
     @media (min-width: 1024px) {
         font-size:.9em;
-        }
+    }
     @media (min-width: 1440px) {
         font-size:1em;
-        }
+    }
     @media (min-width: 1920px) {
        font-size:1.3em;
-        }
+    }
     @media (min-width: 2560px) {
         font-size:2.1em;
-        }
+    }
 `
 const Img = styled.img`
     height:.54em;
@@ -145,33 +145,33 @@ const Img = styled.img`
     border-radius:100%;
     }
     @media (min-width: 768px) {
-         height:1.3em;
-         width:1.3em;
-         margin-right:.2em;
-        }
+        height:1.3em;
+        width:1.3em;
+        margin-right:.2em;
+    }
     @media (min-width: 1024px) {
         height:1.4em;
         width:1.4em;
-        }
+    }
     @media (min-width: 1440px) {
         height:1.5em;
         width:1.5em;
-        }
+    }
     @media (min-width: 1920px) {
        height:2em;
        width:2em;
-        }
+    }
     @media (min-width: 2560px) {
         height:3em;
         width:3em;
         margin-left:0.25em;
-        }
+    }
 `
-const UlIcons = styled(Ul)`
+const NavbarIcons = styled(NavbarList)`
     margin-left:.8em;
     @media (min-width: 2560px) {
         margin-left:2em;
-        }
+    }
 `
 const TopbarContent = styled.div`
     display:flex;
@@ -187,45 +187,45 @@ const HaifaLogo = styled.img`
         margin-top:1.6em;
         height:8.4em;
         width:7.5em;
-}
+    }
     @media (min-width: 425px) {
         margin-top:1.5em;
         margin-right:.5em;
         margin-left:.8em;
         height:8.8em;
         width:7.7em;
-}
+    }
     @media (min-width: 768px) {
         height:16em;
         width:15em;
         margin-top:3em;
-}
+    }
     @media (min-width: 1024px) {
         height:20em;
         width:18em;
         margin-left:1.5em;
         margin-right:1em;
-}
+    }
     @media (min-width: 1440px) {
         height:22.5em;
         width:21em;
         margin-top:3.5em;
         margin-right:0.6em;
         margin-left:1em;
-}
-@media (min-width: 1920px) {
+    }
+    @media (min-width: 1920px) {
         height:26em;
         width:25em;
         margin-top:12em;
         margin-right:2em;
-}
+    }
         @media (min-width: 2560px) {
         height:40em;
         width:36em;
         margin:4em;
-}
+    }
 `
-const TextDiv = styled.div`
+const TextContainer = styled.div`
     display:flex;
     flex-direction:column;
     @media (min-width: 375px) {
@@ -240,7 +240,7 @@ const TextDiv = styled.div`
     }
     @media (min-width: 1920px) {
         margin-top:-3em;             
-}
+    }
         @media (min-width: 2560px) {
         margin-top:-5em;
     }
@@ -252,26 +252,26 @@ const H1= styled.p`
     margin:1.5em 0 -1em 0;
     @media (min-width: 375px) {
         font-size:2em;
-}
+    }
     @media (min-width: 425px) {
         font-size:2.2em;      
-}
+    }
     @media (min-width: 768px) {
         font-size:4em;
-}
+    }
     @media (min-width: 1024px) {
         font-size:4.5em;
-}
+    }
     @media (min-width: 1440px) {
         font-size:6.4em;
-}
-@media (min-width: 1920px) {
+    }
+    @media (min-width: 1920px) {
         font-size:10.5em;      
         letter-spacing:.03em;       
-}
+    }
     @media (min-width: 2560px) {
         font-size:11em;
-        }
+    }
 `
 const P = styled.p`
     color:#f4f5fa;
@@ -279,26 +279,26 @@ const P = styled.p`
     font-size:1.5em;
     @media (min-width: 375px) {
         font-size:1.8em;
-}
+    }
     @media (min-width: 425px) {
         font-size:1.9em;        
-}
+    }
     @media (min-width: 768px) {
-        font-size:3.5em;
-}
+        font-size:3.5em;    
+    }
     @media (min-width: 1024px) {
         font-size:4.2em;
-}
+    }
     @media (min-width: 1440px) {
         font-size:5.6em;
-}
-@media (min-width: 1920px) {
+    }
+    @media (min-width: 1920px) {
         font-size:8.5em;
         letter-spacing:.01em;       
-}
+    }
     @media (min-width: 2560px) {
         font-size:9em;
-}
+    }
 `
 const Buttons= styled.div`
     margin-top:-1.5em;
@@ -313,13 +313,13 @@ const Buttons= styled.div`
     }
     @media (min-width: 1440px) {
         margin-top:-4.2em;
-        }
+    }
     @media (min-width: 1920px) {
         margin-top:-7.2em;
-        }
+    }
     @media (min-width: 2560px) {
         margin-top:-7em;
-        }
+    }
 ` 
 const Button = styled.button`
     font-size:0.4em;
@@ -336,21 +336,21 @@ const Button = styled.button`
     @media (min-width: 768px) {
         font-size:1em;
         width:6em;
-}
+    }
     @media (min-width: 1024px) {
         font-size:1.2em;
         width:7em;
-}
+    }
     @media (min-width: 1440px) {
         font-size:1.5em;
         width:8em;
-}
-@media (min-width: 1920px) {
+    }
+    @media (min-width: 1920px) {
         font-size:2em;
         width:8.5em;
-}
+    }
 
     @media (min-width: 2560px) {
         font-size:2.3em;
-}
+    }
 `

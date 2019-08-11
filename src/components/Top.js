@@ -8,22 +8,46 @@ import twitter from '../images/twitter.png'
 import haifalogo from '../images/haifalogo.png'
 
 class Top extends Component{
+
+    smoothScroll(option){
+        window.addEventListener('click',()=>{
+            switch (option) {
+                case 'Member':
+                    window.scrollTo(0,500)
+                    break;
+                case 'Tickets':
+                    window.scrollTo(0,500)
+                    break;
+                case 'Market':
+                    window.scrollTo(0,1000)
+                    break;
+                case 'Club':
+                    window.scrollTo(0,1700)
+                    break;
+                case 'Stadium':
+                    window.scrollTo(0,2500)
+                    break;
+                default:
+                    break;
+            }
+        })
+    }
     render(){
         return(
             <WrapContainer>
                 <Topbar>
                     <NavbarList>
-                        <Li>רכישת מנוי</Li>
-                        <Li>כרטיסים</Li>
-                        <Li>חנות המוצרים</Li>
-                        <Li> המועדון</Li>
-                        <Li>הסטוריה</Li>
-                        <Li>אצטדיון סמי עופר</Li>
+                        <Li onClick={()=>this.smoothScroll('Member')}>רכישת מנוי</Li>
+                        <Li onClick={()=>this.smoothScroll('Tickets')}>כרטיסים</Li>
+                        <Li onClick={()=>this.smoothScroll('Market')}>חנות המוצרים</Li>
+                        <Li onClick={()=>this.smoothScroll('Club')}> המועדון</Li>
+                        <Li onClick={()=>this.smoothScroll('Club')}>הסטוריה</Li>
+                        <Li onClick={()=>this.smoothScroll('Stadium')}>אצטדיון סמי עופר</Li>
                     </NavbarList>
                     <NavbarIcons>
-                        <Img src={facebook}></Img>
-                        <Img src={instagram}></Img>
-                        <Img src={twitter}></Img>
+                        <Img src={facebook} onClick={()=>{window.location.href='https://www.facebook.com/Mhfootballclub/'}}></Img>
+                        <Img src={instagram} onClick={()=>{window.location.href='https://www.instagram.com/maccabihaifafc'}}></Img>
+                        <Img src={twitter} onClick={()=>{window.location.href='https://twitter.com/mhfootballclub?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'}}></Img>
                     </NavbarIcons>
                 </Topbar>
                 <TopbarContent>
@@ -115,9 +139,13 @@ const Li = styled.li`
     font-size:0.35em;
     color: white;
     margin-left:.9em;
-        transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
     &:hover{
-    transform: scale(1.15); 
+    transform: scale(1.15);
+    &:target{
+        transform: translateY( -1000px );
+    } 
     }
     @media (min-width: 768px) {
         font-size:.85em;

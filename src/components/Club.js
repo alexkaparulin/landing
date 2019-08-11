@@ -52,6 +52,9 @@ const WrapContainer = styled.div`
     @media (min-width: 1024px) {
         height:36em;
     }
+    @media (min-width: 2560px) {
+        height:60em;
+    }
 `
 const PlayerContainer = styled.div`
     display:flex;
@@ -82,6 +85,10 @@ const PlayerImg = styled.img`
         top:-4em;
         right:0em;
     }
+    @media (min-width: 2560px) {
+        height:64em;
+        top:-4em;
+    }
 `
 const ClubContainer = styled.div`
     color:#f4f5fa;
@@ -104,6 +111,9 @@ const P = styled.p`
         letter-spacing:0.05em;
         font-size:14px;
     }    
+    @media (min-width: 2560px) {
+        font-size:23px;
+    }
 `
 const Span = styled.strong`
     font-size:0.2em;
@@ -121,6 +131,9 @@ const H1 = styled.h1`
     }
     @media(min-width:1024px){
         margin-bottom:.7em;
+    }
+    @media (min-width: 2560px) {
+        font-size:2em;
     }    
 `
 const H3 = styled.h3`
@@ -142,5 +155,8 @@ const H3 = styled.h3`
     }
     @media (min-width: 1024px) {
         font-size:.5em;
+    }
+    @media (min-width: 2560px) {
+        font-size:1em;
     }
 `

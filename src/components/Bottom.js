@@ -73,6 +73,9 @@ const H1 = styled.h1`
         font-size:1em;
         margin-bottom:.5em;
     }
+    @media (min-width: 2560px) {
+        font-size:1.8em;
+    }
 `
 const H1Sub = styled.h1`
     font-size:0.1em;
@@ -87,6 +90,9 @@ const H1Sub = styled.h1`
     @media (min-width: 1024px) {
         font-size:1em;
         margin-top:-.3em;
+    }
+    @media (min-width: 2560px) {
+        font-size:1.8em;
     }
 `
 const SearchContainer = styled.div`
@@ -133,7 +139,7 @@ const Search = styled.input`
     }
     @media (min-width: 2560px) {
         font-size:1.6em;
-        width:30em;
+        width:38em;
     }
 `
 const Button = styled.button`
@@ -157,5 +163,8 @@ const Button = styled.button`
         height:2.4em;
         margin-right:.5em;
         font-size:.8em;
+    }
+    @media (min-width: 2560px) {
+        font-size:1.4em;
     }
 `

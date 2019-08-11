@@ -7,23 +7,23 @@ import Merchandise from './components/Merchandise';
 import Club from './components/Club';
 import Stadium from './components/Stadium';
 import Bottom from './components/Bottom';
-//https://epic-poitras-685f69.netlify.com
+//https://focused-bhabha-90d288.netlify.com/
 class App extends Component {
   render() {
     return (
-    <Div>
+    <Wrapper>
       <Top/>
       <Tickets/>
       <Merchandise/>
       <Club/>
       <Stadium/>
       <Bottom/>
-    </Div>
+    </Wrapper>
     );
   }
 }
 
 export default App;
 
-const Div = styled.div`
+const Wrapper = styled.div`
 `

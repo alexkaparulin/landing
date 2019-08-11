@@ -72,6 +72,10 @@ const StadiumContainer = styled.div`
     @media (min-width: 1024px) {
         width:60%;
     }
+    @media (min-width: 2560px) {
+        height:63em;
+        overflow:hidden;
+    }
 `
 const StadiumImg = styled.img`
     height:12em;
@@ -92,12 +96,16 @@ const DotsContainer = styled.div`
     justify-content:center;
     bottom:.5em;
     @media (min-width: 768px) {
-      bottom:1.2em;
+        bottom:1.2em;
     }
     @media (min-width: 1024px) {
         bottom:1.8em;
         width:75%;
         left:0em;
+    }
+    @media (min-width: 2560px) {
+        left:3em;
+        bottom:3.5em;
     }
 `
 const Dot = styled.img`
@@ -114,6 +122,10 @@ const Dot = styled.img`
         height:1.2em;
         width:1.2em;
     }
+    @media (min-width: 2560px) {
+        height:2.5em;
+        width:2.5em;
+    }
 `
 const Dotb = styled.img`
     height:.35em;
@@ -128,6 +140,10 @@ const Dotb = styled.img`
         margin-left:.2em;
         height:1.45em;
         width:1.4em;
+    }
+    @media (min-width: 2560px) {
+        height:3em;
+        width:3em;
     }
 `
 const StadiumTextContainer = styled.div`
@@ -161,7 +177,7 @@ const H1 = styled.h1`
         font-size:1.8em;
     }
     @media (min-width: 2560px) {
-        font-size:2.5em;
+        font-size:3em;
     }
 `
 const P = styled.p`
@@ -173,6 +189,9 @@ const P = styled.p`
     @media (min-width: 1024px) {
         font-size:1.2em;
     }
+    @media (min-width: 2560px) {
+        font-size:2.3em;
+    }
 `
 const Span = styled.span`
     font-weight:700;
@@ -183,5 +202,8 @@ const Span = styled.span`
     }
     @media (min-width: 2560px) {
         font-size:.8em;
+    }
+    @media (min-width: 2560px) {
+        font-size:1em;
     }
 `

@@ -76,6 +76,9 @@ const WrapContainer = styled.div`
     @media (min-width: 1440px) {
         height:40em;
     }
+    @media (min-width: 2560px) {
+        height:60em;
+    }
 `
 const BlineWrap = styled.div`
     height:.2em;
@@ -122,6 +125,9 @@ const Header = styled.div`
     @media (min-width: 1024px) {
         height:8em;
     }
+    @media (min-width: 2560px) {
+        height:14em;
+    }
 `
 const Arrows = styled.div`
     display:flex;
@@ -133,7 +139,7 @@ const Arrows = styled.div`
         height:inherit;
     }
 `
-const DateContainer= styled.div`
+const DateContainer = styled.div`
     display:flex;
     justify-content:center;
     margin-top:-.5em;
@@ -142,6 +148,9 @@ const DateContainer= styled.div`
     }
     @media (min-width: 1024px) {
         margin-top:1em;
+    }
+    @media (min-width: 2560px) {
+        margin-top:2em;
     }
 `
 const DateText = styled.p`
@@ -158,6 +167,9 @@ const DateText = styled.p`
         font-size:.8em;
         margin-top:-1em;
     }
+    @media (min-width: 2560px) {
+        font-size:1.6em;
+    }
  `  
 const TeamsOpponentCon = styled.div`
     display:flex;
@@ -169,6 +181,9 @@ const TeamsOpponentCon = styled.div`
     }
     @media (min-width: 1024px) {
         margin-top:-1em;
+    }
+    @media (min-width: 2560px) {
+        margin-top:-3em;  
     }
 `
 const Left = styled.img`
@@ -182,6 +197,10 @@ const Left = styled.img`
         height:2.2em;
         width:2.2em;
     }
+    @media (min-width: 2560px) {
+        height:4.2em;
+        width:4.2em;
+    }
 `
 const HapoelLogo = styled.img`
     height:1.2em;
@@ -194,6 +213,10 @@ const HapoelLogo = styled.img`
     @media (min-width: 1024px) {
         height:4em;
         width:3.5em;
+    }
+    @media (min-width: 2560px) {
+        height:7em;
+        width:6.5em;
     }
 `
 const H1 = styled.p`
@@ -232,11 +255,18 @@ const Vs = styled.p`
     @media (min-width: 1024px) {
         font-size:1.4em;
     }
+    @media (min-width: 2560px) {
+        font-size:2em;
+    }
 `
 const HaifaLogo = styled(HapoelLogo)`    
     @media (min-width: 1024px) {
-    height:4.6em;
-    width:4.3em;
+        height:4.6em;
+        width:4.3em;
+    }
+    @media (min-width: 2560px) {
+        height:7.8em;
+        width:6.5em;
     }
 `
 const Right = styled(Left)``
@@ -248,10 +278,10 @@ const BuyContainer = styled.div`
         margin-top:-.4em;
     }
     @media (min-width: 768px) {
-        margin-top:-1em;
+        margin-top:-1.4em;
     }
-    @media (min-width: 1024px) {
-        margin-top:-.8em;
+    @media (min-width: 2560px) {
+        margin-top:-1.5em;
     }
 `
 const Buy = styled.button`
@@ -268,12 +298,15 @@ const Buy = styled.button`
     transform: scale(1.05); 
     }
     @media (min-width: 768px) {
-        font-size:.6em;
+        font-size:.5em;
         padding:.02em .5em;
     }
     @media (min-width: 1024px) {
         font-size:.7em;
         padding:.2em 1em;
+    }
+    @media (min-width: 2560px) {
+        font-size:1.2em;
     }
 `
 const Content = styled.div`
@@ -306,6 +339,9 @@ const Players = styled.img`
         height:28em;
         width:85%;
     }
+    @media (min-width: 2560px) {
+        height:45em;
+    }
 `
 const Text = styled.div`
     display:flex;
@@ -337,6 +373,10 @@ const TextTitle = styled.p`
         font-weight:700;
         margin-bottom:1.4em;
     }
+    @media (min-width: 2560px) {
+        font-size:2.4em;
+        margin-bottom:1em;
+    }
 `
 const H5 = styled.h5`
     margin-top:-.65em;
@@ -354,6 +394,9 @@ const H5 = styled.h5`
         font-size:1.1em;
         margin-bottom:1.2em;
     }
+    @media (min-width: 2560px) {
+        font-size:2em;
+    }
 `
 const P = styled.p`
     margin-top:-1em;
@@ -367,8 +410,12 @@ const P = styled.p`
         font-size:1.1em;
         margin-top:-1em;
     }
+    @media (min-width: 2560px) {
+        font-size:2em;
+    }
+    
 `
-const Span= styled.span`
+const Span = styled.span`
     font-weight:600;
     @media (min-width: 320px) {
         font-size:.35em;
@@ -377,6 +424,9 @@ const Span= styled.span`
         font-size:.8em;
     }
     @media (min-width: 1920px) {
+        font-size:1em;
+    }
+    @media (min-width: 2560px) {
         font-size:1em;
     }
         
@@ -392,6 +442,9 @@ const PSpan = styled(P)`
     @media (min-width: 1024px) {
         font-size:1em;
     }
+    @media (min-width: 2560px) {
+        font-size:2em;
+    }
 `
 const BottomSpanH5 = styled(H5)`
     margin-bottom:.5em;
@@ -404,6 +457,9 @@ const BottomSpanH5 = styled(H5)`
     @media (min-width: 1024px) {
         font-size:.9em;
     }
+    @media (min-width: 2560px) {
+        font-size:1.6em;
+    }
 `
 const BottomSpan = styled(BottomSpanH5)`
     margin-top:.4em;
@@ -412,5 +468,8 @@ const BottomSpan = styled(BottomSpanH5)`
     }
     @media (min-width: 1024px) {
         font-size:.9em;
+    }
+    @media (min-width: 2560px) {
+        font-size:1.6em;
     }
 `
